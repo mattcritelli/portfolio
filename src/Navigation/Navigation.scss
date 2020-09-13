@@ -1,0 +1,23 @@
+.Navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  display: flex;
+  padding: 3rem 5rem;
+  text-transform: uppercase;
+
+  &__brand {
+    text-transform: uppercase;
+    margin-right: auto;
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+
+  &__item:not(:last-of-type) {
+    margin-right: 4rem;
+  }
+}
