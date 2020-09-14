@@ -1,0 +1,22 @@
+$hero-img: 'https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3289&q=80';
+
+.Header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: url($hero-img) no-repeat center;
+  background-size: cover;
+  filter: grayscale(80%);
+  position: relative;
+}
+
+.welcome-message {
+  font-size: 5rem;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 50rem;
+}
