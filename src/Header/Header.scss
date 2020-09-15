@@ -7,16 +7,25 @@ $hero-img: 'https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=r
   align-items: center;
   justify-content: center;
   color: white;
-  background: url($hero-img) no-repeat center;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--outer-space-crayola-sheer),
+    var(--teal-blue-sheer)), 
+    url($hero-img);
+
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  filter: grayscale(80%);
   position: relative;
 }
 
 .welcome-message {
+  font-family: 'Roboto Slab', sans-serif;
   font-size: 5rem;
   position: absolute;
   top: 30%;
   left: 10%;
-  width: 50rem;
+  width: 40%;
+  font-weight: 500;
+  letter-spacing: 1px;
 }

@@ -7,9 +7,12 @@
   padding: 3rem 5rem;
   text-transform: uppercase;
   font-size: 1.6rem;
-  color: #282c34;
-  background-color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: var(--teal-blue);
+  color: var(--light-grey-2);
   cursor: pointer;
+  z-index: 10;
 
   &__brand {
     text-transform: uppercase;

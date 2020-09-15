@@ -5,9 +5,9 @@ function Header(props) {
   return (
     <header className="Header">
       {props.children}
-      <div className="welcome-message">
+      <p className="welcome-message">
         Hey there! I'm Matt, a Software Engineer based in Denver.
-      </div>
+      </p>
     </header>
   );
 }
