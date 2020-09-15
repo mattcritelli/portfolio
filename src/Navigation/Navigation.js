@@ -1,16 +1,36 @@
-import React from 'react';
+import React, { useState } from 'react';
+import NavigationItem from './NavigationItem/NavigationItem';
 import './Navigation.scss';
 
 function Navigation() {
+  const [selectedNavItem, setNavItem] = useState("home");
+
+  const handleClick = (e) => setNavItem(e.target.id)
+  
+  const navItems = () => {
+    const itemList = [
+      {id: 1, text: 'home' },
+      {id: 2, text: 'about' },
+      {id: 3, text: 'skills' },
+      {id: 4, text: 'projects' },
+      {id: 5, text: 'contact' },
+    ];    
+
+    return itemList.map(item => (
+      <NavigationItem
+        key={item.id}
+        text={item.text}
+        clickHandler={handleClick}
+        isSelected={selectedNavItem === item.text}
+      />
+    ))
+  }
+
   return (
     <nav className="Navigation">
       <div className="Navigation__brand">Matt Critelli</div>
       <ul className="Navigation__list">
-        <li className="Navigation__item">Home</li>
-        <li className="Navigation__item">About Me</li>
-        <li className="Navigation__item">Skills</li>
-        <li className="Navigation__item">Projects</li>
-        <li className="Navigation__item">Contact</li>
+        { navItems() }
       </ul>
     </nav>
   );
