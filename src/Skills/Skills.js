@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Skills.scss';
+import SkillBox from './SkillBox/SkillBox';
 import jsIcon from '../assets/svg/javascript-icon2.svg';
 import reactIcon from '../assets/svg/react-icon.svg';
 import cssIcon from '../assets/svg/css-icon.svg';
@@ -14,72 +15,106 @@ import clientIcon from '../assets/svg/client-icon.svg';
 import teamIcon from '../assets/svg/team-icon.svg';
 
 function Skills() {
+  const [selectedSkillBox, setSkillBox] = useState("front");
+
+  const handleClick = (e) => setSkillBox(e.target.id)
+
+  const skillBoxes = () => {
+    const boxList = [
+      { id: 1,
+        boxId: 'front',
+        boxText: 'front end',
+        skillList: [
+          {
+            id: 1,
+            icon: reactIcon,
+            text: 'React',
+          },
+          {
+            id: 2,
+            icon: jsIcon,
+            text: 'Modern Javascript (ES6+)',
+          },
+          {
+            id: 3,
+            icon: cssIcon,
+            text: 'CSS3',
+          },
+          {
+            id: 4,
+            icon: htmlIcon,
+            text: 'HTML5',
+          },
+        ]
+      },
+      { id: 2,
+        boxId: 'full',
+        boxText: 'full stack',
+        skillList: [
+          {
+            id: 1,
+            icon: nodeIcon,
+            text: 'Node.js',
+          },
+          {
+            id: 2,
+            icon: apiIcon,
+            text: 'Api Integration',
+          },
+          {
+            id: 3,
+            icon: mongoDBIcon,
+            text: 'MongoDB',
+          },
+          {
+            id: 4,
+            icon: rubyRailsIcon,
+            text: 'Ruby on Rails',
+          },
+          {
+            id: 5,
+            icon: githubIcon,
+            text: 'Github & Version Control',
+          },
+        ]
+      },
+      { id: 3,
+        boxId: 'soft',
+        boxText: 'soft skills',
+        skillList: [
+          {
+            id: 1,
+            icon: teamIcon,
+            text: 'Team management',
+          },
+          {
+            id: 2,
+            icon: clientIcon,
+            text: 'Client management',
+          },
+        ]
+      },
+    ];    
+
+    return boxList.map(box => (
+      <SkillBox
+        key={box.id}
+        boxText={box.boxText}
+        clickHandler={handleClick}
+        isSelected={selectedSkillBox === box.boxId}
+        itemList={box.skillList}
+      />
+    ));
+  };
+
   return (
-    <section className="Skills">
+    <section className="Skills" id="skills">
       <h2 className="Skills__section-heading">
         <span>Skills</span>
         <span>& Experience</span>
       </h2>
       <div className="Skills__container">
-        <div className="Skills__box">
-          <h3 className="Skills__box-heading">Front end</h3>
-          <ul className="Skills__list">
-            <li className="Skills__item">
-              <img src={reactIcon} alt="" className="Skills__icon"/>
-              React
-            </li>
-            <li className="Skills__item">
-              <img src={jsIcon} alt="" className="Skills__icon"/>
-              Modern Javascript (ES6+)
-            </li>
-            <li className="Skills__item">
-              <img src={cssIcon} alt="" className="Skills__icon"/>
-              CSS3
-            </li>
-            <li className="Skills__item">
-              <img src={htmlIcon} alt="" className="Skills__icon"/> 
-              HTML5
-            </li>
-          </ul>
-        </div>
-        <div className="Skills__box">
-          <h3 className="Skills__box-heading">Full Stack</h3>
-          <ul className="Skills__list">
-            <li className="Skills__item">
-              <img src={nodeIcon} alt="" className="Skills__icon"/>
-              Node.js
-            </li>
-            <li className="Skills__item">
-              <img src={apiIcon} alt="" className="Skills__icon"/>
-              Api Integration
-            </li>
-            <li className="Skills__item">
-              <img src={mongoDBIcon} alt="" className="Skills__icon"/>
-              MongoDB
-            </li>
-            <li className="Skills__item">
-              <img src={rubyRailsIcon} alt="" className="Skills__icon"/>
-              Ruby on Rails
-            </li>
-            <li className="Skills__item">
-              <img src={githubIcon} alt="" className="Skills__icon"/>
-              Github & Version Control
-            </li>
-          </ul>
-        </div>
-        <div className="Skills__box">
-          <h3 className="Skills__box-heading">Soft Skills</h3>
-          <ul className="Skills__list">
-            <li className="Skills__item">
-              <img src={teamIcon} alt="" className="Skills__icon"/>
-              Team management
-            </li>
-            <li className="Skills__item">
-              <img src={clientIcon} alt="" className="Skills__icon"/>
-              Client facing/relationships
-            </li>
-          </ul>
-        </div>
+        { skillBoxes() }
       </div>
     </section>
   );

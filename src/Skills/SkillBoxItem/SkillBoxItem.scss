@@ -1,0 +1,13 @@
+.SkillBoxItem {
+  display: flex;
+  align-items: center;
+
+  &:not(:last-of-type) {
+    margin-bottom: 3rem;
+  }
+
+  &__icon {
+    width: 5rem;
+    margin-right: 3rem;
+  }
+}

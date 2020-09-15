@@ -9,10 +9,9 @@ function NavigationItem ({
   return (
     <li
       className={`NavigationItem${isSelected ? ' selected' : ''}`}
-      id={text}
       onClick={clickHandler}
     >
-      {text}
+      <a className="NavigationItem__link">{text}</a>
     </li>
   );
 }

@@ -2,6 +2,15 @@
   position: relative;
   padding-bottom: 1rem;
 
+  &__link,
+  &__link:link,
+  &__link:visited {
+    color: var(--light-grey-1);
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
   &.selected {
     border-bottom: 2px solid var(--outer-space-crayola);
   }

@@ -5,7 +5,13 @@ import './Navigation.scss';
 function Navigation() {
   const [selectedNavItem, setNavItem] = useState("home");
 
-  const handleClick = (e) => setNavItem(e.target.id)
+  const handleClick = (e) => {
+    e.preventDefault();
+
+    const sectionElement = document.getElementById(`${e.target.innerHTML}`);
+    sectionElement.scrollIntoView({ behavior: "smooth" });
+    setNavItem(e.target.id);
+  }
   
   const navItems = () => {
     const itemList = [

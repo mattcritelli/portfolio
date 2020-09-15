@@ -4,7 +4,7 @@ import myPhoto from '../assets/images/matt-photo.jpg'
 
 function AboutMe() {
   return (
-    <section className="AboutMe">
+    <section className="AboutMe" id="about">
       <img src={myPhoto} alt="" className="AboutMe__image"/>
       <div className="AboutMe__text-outer-container">
         <div className="AboutMe__text-inner-container">
