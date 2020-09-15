@@ -6,6 +6,13 @@
   display: flex;
   padding: 3rem 5rem;
   text-transform: uppercase;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: var(--teal-blue);
+  color: var(--light-grey-2);
+  cursor: pointer;
+  z-index: 10;
 
   &__brand {
     text-transform: uppercase;

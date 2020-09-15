@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+:root {
+  --outer-space-crayola: hsla(194, 33%, 18%, 1);
+  --teal-blue: hsla(195, 37%, 40%, 1);
+  --green-sheen: hsla(172, 25%, 55%, 1);
+  --cambridge-blue: hsla(129, 22%, 69%, 1);
+  --tea-green: hsla(95, 32%, 82%, 1);
+  --peach-puff: hsla(29, 97%, 86%, 1);
+  --light-grey-1: hsla(0, 9%, 98%, 1);
+  --light-grey-2: hsla(0, 8%, 95%, 1);
+  --dark-grey-1: 	hsla(220, 13%, 18%, 1);
+  
+  /* SHEER COLORS FOR FILTER EFFECTS */
+  --outer-space-crayola-sheer: hsla(194, 33%, 18%, .6);
+  --green-sheen-sheer: hsla(172, 25%, 55%, .6);
+  --teal-blue-sheer: hsla(195, 37%, 40%, .6);
+}
+
 *,
 *::after,
 *::before {
@@ -12,16 +32,29 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  font-size: 1.8rem;
+  color: var(--light-grey-1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #282c34;
-  padding: 3rem;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/*
+  1500px = 93.75em;
+  1200px = 75em; 
+  900px = 56.25em; 
+  600px = 37.5em; 
+*/
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
 }

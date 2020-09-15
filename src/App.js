@@ -1,13 +1,18 @@
 import React from 'react';
+import Header from './Header/Header';
 import Navigation from './Navigation/Navigation';
+import Skills from './Skills/Skills';
+import AboutMe from './AboutMe/AboutMe';
 import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <Header>
         <Navigation />
-      </header>
+      </Header>
+      <AboutMe />
+      <Skills />
     </div>
   );
 }
