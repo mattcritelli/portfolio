@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Skills.scss';
+import SectionHeader from '../SectionHeader/SectionHeader';
 import SkillBox from './SkillBox/SkillBox';
 import jsIcon from '../assets/svg/javascript-icon2.svg';
 import reactIcon from '../assets/svg/react-icon.svg';
@@ -17,10 +18,7 @@ import teamIcon from '../assets/svg/team-icon.svg';
 function Skills() {
   const [selectedSkillBox, setSkillBox] = useState("front-state");
 
-  const handleClick = (e) => { 
-    console.log('e.target', e.target)
-    return setSkillBox(e.target.id)
-  }
+  const handleClick = (e) => setSkillBox(e.target.id)
 
   const skillBoxes = () => {
     const boxList = [
@@ -134,10 +132,10 @@ function Skills() {
 
   return (
     <section className="Skills" id="skills">
-      <h2 className="Skills__section-heading">
-        <span>Skills</span>
-        <span>& Experience</span>
-      </h2>
+      <SectionHeader
+        topLine="Skills"
+        bottomLine=" & Experience"
+      />
       <div className="Skills__container">
         { skillBoxes() }
       </div>

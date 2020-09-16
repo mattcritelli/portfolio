@@ -27,7 +27,7 @@
 }
 
 html {
-  font-size: 75%;
+  font-size: 62.5%;
   box-sizing: border-box;
 }
 
@@ -49,16 +49,17 @@ code {
 /*
   1500px = 93.75em;
   1200px = 75em; 
-  900px = 56.25em; 
+  900px = 56.25em;
+  700px = 43.75em;
   600px = 37.5em; 
 */
-/* @media only screen and (max-width: 75em) {
+@media only screen and (max-width: 75em) {
   html {
-    font-size: 50%;
+    font-size: 56.25%;
   }
 }
 
-@media only screen and (max-width: 75em) {
+/* @media only screen and (max-width: 75em) {
   html {
     font-size: 50%;
   }

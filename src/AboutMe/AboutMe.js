@@ -1,14 +1,15 @@
 import React from 'react';
 import './AboutMe.scss';
+import SectionHeader from '../SectionHeader/SectionHeader';
 import myPhoto from '../assets/images/matt-photo.jpg'
 
 function AboutMe() {
   return (
     <section className="AboutMe" id="about">
-      <h2 className="AboutMe__section-heading">
-        <span>My</span>
-        <span>Story</span>
-      </h2>
+      <SectionHeader
+        topLine="My"
+        bottomLine=" Story"
+      />
       <div className="AboutMe__container">
         <img src={myPhoto} alt="" className="AboutMe__image"/>
         <div className="AboutMe__text-outer-container">

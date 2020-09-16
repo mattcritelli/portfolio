@@ -1,16 +1,16 @@
 .AboutMe {
   min-height: 100vh;
-  padding: 5rem 10rem;
+  padding: 10rem 15rem;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  // align-items: flex-start;
   background-color: var(--outer-space-crayola);
 
   &__section-heading {
     font-family: 'Roboto Slab', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
-    font-size: 4rem;
+    font-size: 5rem;
     margin-bottom: 5rem;
 
     & span {
@@ -28,6 +28,7 @@
     height: 25rem;
     background-size: auto;
     border-radius: 50%;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, .3);
   }
 
   &__text-outer-container {
@@ -35,7 +36,8 @@
     margin-left: 5rem;
     background-color: var(--green-sheen);
     transform: skewX(-12deg);
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+    box-shadow: 0 2rem 2rem rgba(0, 0, 0, .3);
     
     & > * {
       transform: skewX(12deg);
@@ -55,40 +57,30 @@
       height: 20rem;
     }
 
-    &__text-outer-container {
-      font-size: 1.2rem;
-    }
+    // &__text-outer-container {
+    //   font-size: 1.2rem;
+    // }
   }
 }
 
 @media only screen and (max-width: 75em) {
   .AboutMe {
+    padding: 5rem 7.5rem;
+
     &__image {
-      height: 15rem;
+      height: 18rem;
     }
 
     &__text-outer-container {
-      transform: skewX(0);
-      padding: 3rem 5rem;
-      font-size: 1.2rem;
-
-      & > * {
-        transform: skewX(0);
-      }
+      font-size: 1.6rem;
     }
   }
 }
 
 @media only screen and (max-width: 56.25em) {
   .AboutMe {
-    padding: 5rem 5rem;
-
     &__image {
-      margin-bottom: 3rem;
-    }
-
-    &__section-heading {
-      margin-bottom: 1.5rem;
+      margin-bottom: 6rem;
     }
 
     &__container {
@@ -97,7 +89,13 @@
     }
 
     &__text-outer-container {
+      transform: skewX(0);
+      padding: 3rem 5rem;
       margin: 0;
+
+      & > * {
+        transform: skewX(0);
+      }
     }
   }
 }
