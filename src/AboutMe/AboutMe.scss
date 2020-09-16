@@ -1,9 +1,28 @@
 .AboutMe {
   min-height: 100vh;
-  padding: 0 5rem;
-  background-color: var(--outer-space-crayola);
+  padding: 5rem 10rem;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--outer-space-crayola);
+
+  &__section-heading {
+    font-family: 'Roboto Slab', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+
+    & span {
+      display: block;
+    }
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    // flex-wrap: wrap;
+  }
 
   &__image {
     height: 25rem;
@@ -12,25 +31,14 @@
   }
 
   &__text-outer-container {
-    padding: 10rem 15rem;
-    margin: 0 10rem;
+    padding: 5rem 10rem;
+    margin-left: 5rem;
     background-color: var(--green-sheen);
     transform: skewX(-12deg);
+    font-size: 1.4rem;
     
     & > * {
       transform: skewX(12deg);
-    }
-  }
-
-  &__heading {
-    text-transform: uppercase;
-    font-family: 'Roboto Slab', sans-serif;
-    font-weight: 600;
-    font-size: 5rem;
-    margin-bottom: 3rem;
-
-    & span {
-      display: block;
     }
   }
 
@@ -43,42 +51,53 @@
 
 @media only screen and (max-width: 93.75em) {
   .AboutMe {
-    padding: 0 5rem;
-
-    &__text-outer-container {
-      padding: 5rem 10rem;
-      margin: 0 5rem;
+    &__image {
+      height: 20rem;
     }
 
-    &__heading {
-      font-size: 3rem;
-      margin-bottom: 1.5rem;
+    &__text-outer-container {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 75em) {
+  .AboutMe {
+    &__image {
+      height: 15rem;
+    }
+
+    &__text-outer-container {
+      transform: skewX(0);
+      padding: 3rem 5rem;
+      font-size: 1.2rem;
+
+      & > * {
+        transform: skewX(0);
+      }
     }
   }
 }
 
 @media only screen and (max-width: 56.25em) {
   .AboutMe {
-    flex-direction: column;
-    padding: 0;
-    justify-content: center;
+    padding: 5rem 5rem;
 
     &__image {
-      margin-bottom: 8rem;
+      margin-bottom: 3rem;
+    }
+
+    &__section-heading {
+      margin-bottom: 1.5rem;
+    }
+
+    &__container {
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     &__text-outer-container {
-      transform: skewX(0);
-      padding: 3rem 5rem;
-
-      & > * {
-        transform: skewX(0);
-      }
+      margin: 0;
     }
-
-    // &__heading {
-    //   font-size: 3rem;
-    //   margin-bottom: 1.5rem;
-    // }
   }
 }

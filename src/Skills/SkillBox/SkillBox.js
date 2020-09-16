@@ -3,6 +3,7 @@ import SkillBoxItem from '../SkillBoxItem/SkillBoxItem'
 import './SkillBox.scss';
 
 function SkillBox ({
+  stateId,
   boxText,
   clickHandler,
   isSelected,
@@ -10,8 +11,9 @@ function SkillBox ({
 }) {
   return (
     <div
+      id={stateId}
       className="SkillBox"
-      onClick={clickHandler}
+      onClick={(e) => clickHandler(e)}
     >
       <h3 className="SkillBox__heading">{boxText}</h3>
       <ul className="SkillBox__list">

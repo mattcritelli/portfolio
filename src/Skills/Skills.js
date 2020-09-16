@@ -15,15 +15,19 @@ import clientIcon from '../assets/svg/client-icon.svg';
 import teamIcon from '../assets/svg/team-icon.svg';
 
 function Skills() {
-  const [selectedSkillBox, setSkillBox] = useState("front");
+  const [selectedSkillBox, setSkillBox] = useState("front-state");
 
-  const handleClick = (e) => setSkillBox(e.target.id)
+  const handleClick = (e) => { 
+    console.log('e.target', e.target)
+    return setSkillBox(e.target.id)
+  }
 
   const skillBoxes = () => {
     const boxList = [
       { id: 1,
         boxId: 'front',
         boxText: 'front end',
+        stateId: 'front-state',
         skillList: [
           {
             id: 1,
@@ -50,6 +54,7 @@ function Skills() {
       { id: 2,
         boxId: 'full',
         boxText: 'full stack',
+        stateId: 'full-state',
         skillList: [
           {
             id: 1,
@@ -81,6 +86,24 @@ function Skills() {
       { id: 3,
         boxId: 'soft',
         boxText: 'soft skills',
+        stateId: 'soft-state',
+        skillList: [
+          {
+            id: 1,
+            icon: teamIcon,
+            text: 'Team management',
+          },
+          {
+            id: 2,
+            icon: clientIcon,
+            text: 'Client management',
+          },
+        ]
+      },
+      { id: 4,
+        boxId: 'soft',
+        boxText: 'soft skills',
+        stateId: 'soft-state',
         skillList: [
           {
             id: 1,
@@ -99,9 +122,11 @@ function Skills() {
     return boxList.map(box => (
       <SkillBox
         key={box.id}
+        boxId={box.boxId}
+        stateId={box.stateId}
         boxText={box.boxText}
         clickHandler={handleClick}
-        isSelected={selectedSkillBox === box.boxId}
+        isSelected={selectedSkillBox === box.stateId}
         itemList={box.skillList}
       />
     ));
