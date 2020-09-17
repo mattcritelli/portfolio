@@ -8,8 +8,8 @@ function SectionHeader ({
   return (
     <section className="SectionHeader">
       <h2 className="SectionHeader">
-        <span>{topLine}</span>
-        <span>{bottomLine}</span>
+        <span>{topLine || ''}</span>
+        <span>{bottomLine || ''}</span>
       </h2>
     </section>
   );

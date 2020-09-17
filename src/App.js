@@ -1,8 +1,10 @@
 import React from 'react';
 import Header from './Header/Header';
 import Navigation from './Navigation/Navigation';
-import Skills from './Skills/Skills';
 import AboutMe from './AboutMe/AboutMe';
+import Skills from './Skills/Skills';
+import Projects from './Projects/Projects';
+import Contact from './Contact/Contact';
 import './App.scss';
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
       </Header>
       <AboutMe />
       <Skills />
+      <Projects />
+      <Contact />
     </div>
   );
 }

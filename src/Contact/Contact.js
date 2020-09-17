@@ -1,16 +1,16 @@
 import React from 'react';
-import './Projects.scss';
+import './Contact.scss';
 import SectionHeader from '../SectionHeader/SectionHeader';
 
-function Projects() {
+function Contact() {
   return (
-    <section className="Projects" id="projects">
+    <section className="Contact" id="contact">
       <SectionHeader
-        topLine="Projects"
+        topLine="Contact"
         // bottomLine=" Story"
       />
     </section>
   );
 }
 
-export default Projects;
+export default Contact;

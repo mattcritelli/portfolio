@@ -20,6 +20,7 @@ function SkillBox ({
         {
           itemList.map(item => (
             <SkillBoxItem
+              key={item.id}
               text={item.text}
               icon={item.icon}
             />
