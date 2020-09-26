@@ -17,15 +17,32 @@ $hero-img: 'https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=r
   background-position: center;
   background-size: cover;
   position: relative;
+
+  &__welcome-message {
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 4rem;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 40%;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
 }
 
-.welcome-message {
-  font-family: 'Roboto Slab', sans-serif;
-  font-size: 5rem;
-  position: absolute;
-  top: 30%;
-  left: 10%;
-  width: 40%;
-  font-weight: 500;
-  letter-spacing: 1px;
+@media only screen and (max-width: 75em) {
+  .Header {
+    &__welcome-message {
+      font-size: 3rem;
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .Header {
+    &__welcome-message {
+      width: 60%;
+    }
+  }
 }

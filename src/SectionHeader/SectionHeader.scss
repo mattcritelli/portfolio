@@ -1,0 +1,23 @@
+.SectionHeader {
+  font-family: 'Roboto Slab', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 5rem;
+  margin-bottom: 5rem;
+
+  & span {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .SectionHeader {
+    font-size: 4.5rem;
+    text-align: center;
+
+
+    & span {
+      display: inline;
+    }
+  }
+}
