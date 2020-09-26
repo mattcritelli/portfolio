@@ -5,7 +5,7 @@ import myPhoto from '../assets/images/matt-photo.jpg'
 
 function AboutMe() {
   return (
-    <section className="AboutMe" id="about">
+    <section className="AboutMe" id="about_section">
       <SectionHeader
         topLine="My"
         bottomLine=" Story"

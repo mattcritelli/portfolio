@@ -4,14 +4,20 @@ import './NavigationItem.scss';
 function NavigationItem ({
   text,
   clickHandler,
-  isSelected
+  isSelected,
+  mobileNavOpen,
+  delay
 }) {
   return (
     <li
-      className={`NavigationItem${isSelected ? ' selected' : ''}`}
+      className={`
+        NavigationItem
+        ${isSelected ? ' selected' : ''}
+        ${mobileNavOpen ? ' open' : ''}
+      `}
       onClick={clickHandler}
     >
-      <a className="NavigationItem__link">{text}</a>
+      <a className="NavigationItem__link" id={text}>{text}</a>
     </li>
   );
 }
