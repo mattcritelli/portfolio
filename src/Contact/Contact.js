@@ -4,7 +4,7 @@ import SectionHeader from '../SectionHeader/SectionHeader';
 
 function Contact() {
   return (
-    <section className="Contact" id="contact">
+    <section className="Contact" id="contact_section">
       <SectionHeader
         topLine="Contact"
         // bottomLine=" Story"

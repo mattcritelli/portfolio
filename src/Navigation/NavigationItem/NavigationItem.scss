@@ -9,6 +9,11 @@
     border: none;
     cursor: pointer;
     text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &.selected {
@@ -44,6 +49,41 @@
 
     &:not(:last-of-type) {
       margin-right: 2.5rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .NavigationItem {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    background-color: var(--teal-blue);
+    transition: transform .5s;
+    transform: translateX(-100%);
+    opacity: 0;
+
+    &.selected,
+    &:not(.selected)::after {
+      border: none;
+    }
+
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        transition-delay: 100ms * $i;
+      }
+    }
+    
+    &.open {
+      transform: translateX(0);
+      opacity: 1;
+    }
+
+    &:nth-last-of-type(even) {
+      background-color: var(--green-sheen);
     }
   }
 }

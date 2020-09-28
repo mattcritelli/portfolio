@@ -4,7 +4,7 @@ import SectionHeader from '../SectionHeader/SectionHeader';
 
 function Projects() {
   return (
-    <section className="Projects" id="projects">
+    <section className="Projects" id="projects_section">
       <SectionHeader
         topLine="Projects"
         // bottomLine=" Story"

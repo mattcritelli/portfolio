@@ -131,7 +131,7 @@ function Skills() {
   };
 
   return (
-    <section className="Skills" id="skills">
+    <section className="Skills" id="skills_section">
       <SectionHeader
         topLine="Skills"
         bottomLine=" & Experience"
