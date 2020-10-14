@@ -13,6 +13,7 @@ import mongoDBIcon from '../assets/svg/mongodb-icon.svg';
 import rubyRailsIcon from '../assets/svg/ruby-rails-icon.svg';
 import githubIcon from '../assets/svg/github-icon.svg';
 import clientIcon from '../assets/svg/client-icon.svg';
+import sassIcon from '../assets/svg/sass-icon.svg';
 import teamIcon from '../assets/svg/team-icon.svg';
 
 function Skills() {
@@ -30,7 +31,7 @@ function Skills() {
           {
             id: 1,
             icon: reactIcon,
-            text: 'React',
+            text: 'React (including Router, Hooks, Context API)',
           },
           {
             id: 2,
@@ -40,13 +41,19 @@ function Skills() {
           {
             id: 3,
             icon: cssIcon,
-            text: 'CSS3',
+            text: 'CSS3 & Responsive Web Design (including Flexbox and Grid)',
           },
           {
             id: 4,
             icon: htmlIcon,
             text: 'HTML5',
           },
+          {
+            id: 5,
+            icon: sassIcon,
+            text: 'Preprocessors & methodologies (i.e. BEM)',
+          },
+
         ]
       },
       { id: 2,
@@ -98,23 +105,23 @@ function Skills() {
           },
         ]
       },
-      { id: 4,
-        boxId: 'soft',
-        boxText: 'soft skills',
-        stateId: 'soft-state',
-        skillList: [
-          {
-            id: 1,
-            icon: teamIcon,
-            text: 'Team management',
-          },
-          {
-            id: 2,
-            icon: clientIcon,
-            text: 'Client management',
-          },
-        ]
-      },
+      // { id: 4,
+      //   boxId: 'soft',
+      //   boxText: 'soft skills',
+      //   stateId: 'soft-state',
+      //   skillList: [
+      //     {
+      //       id: 1,
+      //       icon: teamIcon,
+      //       text: 'Team management',
+      //     },
+      //     {
+      //       id: 2,
+      //       icon: clientIcon,
+      //       text: 'Client management',
+      //     },
+      //   ]
+      // },
     ];    
 
     return boxList.map(box => (

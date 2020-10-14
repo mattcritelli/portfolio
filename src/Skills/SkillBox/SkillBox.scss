@@ -1,6 +1,6 @@
 .SkillBox {
   width: 30%;
-  background-color: var(--peach-puff);
+  background-color: var(--almond);
   color: var(--dark-grey-1);
   font-weight: 600;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, .3);
@@ -21,7 +21,7 @@
 
   &__list {
     list-style: none;
-    padding: 2rem;
+    padding: 4rem;
   }
 }
 

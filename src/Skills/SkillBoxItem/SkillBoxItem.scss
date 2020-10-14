@@ -1,10 +1,10 @@
 .SkillBoxItem {
   display: flex;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
 
   &:not(:last-of-type) {
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
   }
 
   &__icon {
