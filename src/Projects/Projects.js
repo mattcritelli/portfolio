@@ -7,7 +7,7 @@ const Projects = () => (
   <section className="Projects" id="projects_section">
     <SectionHeader
       topLine="Work"
-      bottomLine="Examples"
+      bottomLine=" Examples"
     />
     <div className="Projects__text-container">
       <p className="Projects__text">
@@ -24,8 +24,10 @@ const Projects = () => (
       </p>
       <p className="Projects__text">
         While I am unable to show screenshots or link directly to these
-        projects due to an employer agreement, below are some highlights
-        of projects I have worked on as well as my contributions.
+        projects due to an employer agreement, below is a brief description of
+        projects I have managed or been heavily involved in. I would love
+        the opportunity to further discuss my contributions to these projects
+        in greater detail.
       </p>
     </div>
     <div className="Projects__container">

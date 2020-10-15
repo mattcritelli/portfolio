@@ -104,24 +104,7 @@ function Skills() {
             text: 'Client management',
           },
         ]
-      },
-      // { id: 4,
-      //   boxId: 'soft',
-      //   boxText: 'soft skills',
-      //   stateId: 'soft-state',
-      //   skillList: [
-      //     {
-      //       id: 1,
-      //       icon: teamIcon,
-      //       text: 'Team management',
-      //     },
-      //     {
-      //       id: 2,
-      //       icon: clientIcon,
-      //       text: 'Client management',
-      //     },
-      //   ]
-      // },
+      }
     ];    
 
     return boxList.map(box => (

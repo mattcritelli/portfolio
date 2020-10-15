@@ -1,7 +1,5 @@
 .ProjectBox {
-  // height: 500px; /* for testing */
   width: 40%;
-  min-width: 400px;
   background-color: var(--almond);
   color: var(--dark-grey-1);
   font-weight: 600;
@@ -34,15 +32,14 @@
   }
 }
 
+@media only screen and (max-width: 75em) {
+  .ProjectBox {
+    width: 60%;
+  }
+}
 
-// @media only screen and (max-width: 93.75em) {
-//   .ProjectBox {
-//     width: 40%;
-//   }
-// }
-
-// @media only screen and (max-width: 56.25em) {
-//   .ProjectBox {
-//     width: 60%;
-//   }
-// }
+@media only screen and (max-width: 37.5em) {
+  .ProjectBox {
+    width: 95%;
+  }
+}
