@@ -5,9 +5,11 @@
   --outer-space-crayola: hsla(194, 33%, 18%, 1);
   --teal-blue: hsla(195, 37%, 40%, 1);
   --green-sheen: hsla(172, 25%, 55%, 1);
-  --cambridge-blue: hsla(129, 22%, 69%, 1);
+  --almond: hsla(29, 97%, 86%, 1);
+  --almond: hsla(28, 56%, 87%, 1);
+  --almond: hsla(25, 100%, 94%, 1);
+  --cambridge-blue: hsla(129, 22%, 69%, 1); /* not-used */
   --tea-green: hsla(95, 32%, 82%, 1);
-  --peach-puff: hsla(29, 97%, 86%, 1);
   --light-grey-1: hsla(0, 9%, 98%, 1);
   --light-grey-2: hsla(0, 8%, 95%, 1);
   --dark-grey-1: 	hsla(220, 13%, 18%, 1);
@@ -52,6 +54,7 @@ code {
   900px = 56.25em;
   700px = 43.75em;
   600px = 37.5em; 
+  400px = 25em; 
 */
 @media only screen and (max-width: 75em) {
   html {

@@ -8,7 +8,9 @@ function Navigation() {
 
   const handleNavItemClick = (e) => {
     const sectionElement = document.getElementById(`${e.target.innerHTML}_section`);
-    sectionElement.scrollIntoView({ behavior: `${mobileNavOpen ? 'auto' : 'smooth'}` });    
+    sectionElement.scrollIntoView({
+      behavior: `${mobileNavOpen ? 'auto' : 'smooth'}`
+    });    
     setNavItem(e.target.id);
 
     if(mobileNavOpen) toggleMobileMenu();

@@ -1,5 +1,5 @@
-.SkillBox {
-  width: 30%;
+.ProjectBox {
+  width: 40%;
   background-color: var(--almond);
   color: var(--dark-grey-1);
   font-weight: 600;
@@ -10,7 +10,7 @@
 
   &__heading {
     font-family: 'Roboto Slab', sans-serif;
-    background-color: var(--outer-space-crayola);
+    background-color: var(--green-sheen);
     color: var(--light-grey-1);
     text-transform: uppercase;
     text-align: center;
@@ -18,27 +18,28 @@
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
     font-size: 1.8rem;
   }
-
-  &__list {
-    list-style: none;
-    padding: 4rem;
+  
+  &__detail-container {
+    padding: 3rem;
+  }
+  
+  &__detail {
+    font-size: 1.5rem;
+  
+    &:not(:last-of-type) {
+      margin-bottom: 2rem;
+    }
   }
 }
 
-@media only screen and (max-width: 93.75em) {
-  .SkillBox {
-    width: 40%;
-  }
-}
-
-@media only screen and (max-width: 56.25em) {
-  .SkillBox {
+@media only screen and (max-width: 75em) {
+  .ProjectBox {
     width: 60%;
   }
 }
 
 @media only screen and (max-width: 37.5em) {
-  .SkillBox {
+  .ProjectBox {
     width: 95%;
   }
 }

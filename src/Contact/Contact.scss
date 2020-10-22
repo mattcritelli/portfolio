@@ -2,4 +2,60 @@
   min-height: 100vh;
   padding: 10rem 15rem;
   background-color: var(--green-sheen);
+
+  &__text-container {
+    margin: 0 0 5rem 0;
+  }
+
+  &__text {
+    font-size: 1.8rem;
+
+    &:not(:last-of-type) {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.button,
+.button:link,
+.button:visited {
+  padding: 1.5rem 3rem;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: var(--outer-space-crayola);
+  display: inline-block;
+  margin-top: 3rem;
+  border-radius: 5px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .3);
+  transition: all .2s;
+
+  &:hover {
+    transform: translateY(-3px);
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, .5);
+  }
+}
+
+
+@media only screen and (max-width: 75em) {
+  .Contact {
+    padding: 7.5rem 7.5rem;
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .Contact {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .Contact {
+    padding: 5rem 2rem;
+  }
 }

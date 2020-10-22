@@ -15,13 +15,13 @@ function AboutMe() {
         <div className="AboutMe__text-outer-container">
           <div className="AboutMe__text-inner-container">
             <p className="AboutMe__text">
-              I'm a full-stack software developer based in the Mile High City. While back-end development is what originally drew me to the crazy world of coding, I've developed a huge appreciation for the front-end. I love working in the space where people and code intersect.
+              I'm an experienced front-end developer with a passion for working in the space where people and code intersect. The main technologies I use everyday are JavaScript, React, Redux, HTML5, and CSS3. While my most recent experience is focused on these specific client-side technologies, I am excited for opportunities where I can continue to grow on the front-end or broaden my skill-set across the stack.
             </p>
             <p className="AboutMe__text">
-              I am comfortable working with a variety of different technologies including Ruby/Rails, PostgreSQL, mongoDB, NodeJS, Express, Javascript, jQuery, HTML5, CSS3. My current goal is to learn React inside and out over the next few months.
+              Prior to my life as a software developer, I worked as a media planner at some of the top ad agencies in New York City. During that time I developed a lot of skills which have resulted in me being a better developer today. As a manager, I was responsible for setting priorities and deadlines and maintaining constant communication with our internal and external teams and departments. Being the primary client contact at the agency, I needed to understand how to communicate our internal technical decisions and deliberations to non-technical stakeholders. While I thoroughly enjoyed the more technical and analytical side of that career, I felt it was missing the creative component which I find deeply rewarding in software engineering.
             </p>
             <p className="AboutMe__text">
-              After 10 years of living and working in Manhattan, I decided to trade the Big Apple for the Rocky Mountains. When I'm not trying to build something cool, you'll probably find me somewhere outside or flipping through some Lonely Planet books planning my next trip. I love traveling, scuba diving, hiking, snowboarding, and fishing.
+              After my time living and working in Manhattan, I decided to trade the Big Apple for the Rocky Mountains. When I'm building something cool, you'll probably find me somewhere outside or flipping through some Lonely Planet books planning my next trip. I love traveling, scuba diving, hiking, snowboarding, and dabbling in foreign languages.
             </p> 
           </div>
         </div>

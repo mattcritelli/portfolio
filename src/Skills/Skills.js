@@ -4,6 +4,7 @@ import SectionHeader from '../SectionHeader/SectionHeader';
 import SkillBox from './SkillBox/SkillBox';
 import jsIcon from '../assets/svg/javascript-icon2.svg';
 import reactIcon from '../assets/svg/react-icon.svg';
+import reduxIcon from '../assets/svg/redux-icon.svg';
 import cssIcon from '../assets/svg/css-icon.svg';
 import htmlIcon from '../assets/svg/html-icon.svg';
 import apiIcon from '../assets/svg/api-icon.svg';
@@ -13,6 +14,7 @@ import mongoDBIcon from '../assets/svg/mongodb-icon.svg';
 import rubyRailsIcon from '../assets/svg/ruby-rails-icon.svg';
 import githubIcon from '../assets/svg/github-icon.svg';
 import clientIcon from '../assets/svg/client-icon.svg';
+import sassIcon from '../assets/svg/sass-icon.svg';
 import teamIcon from '../assets/svg/team-icon.svg';
 
 function Skills() {
@@ -30,23 +32,34 @@ function Skills() {
           {
             id: 1,
             icon: reactIcon,
-            text: 'React',
+            text: 'React (including Router, Hooks, Context API)',
           },
           {
             id: 2,
+            icon: reduxIcon,
+            text: 'Redux state containers and data-flow architecture',
+          },
+          {
+            id: 3,
             icon: jsIcon,
             text: 'Modern Javascript (ES6+)',
           },
           {
-            id: 3,
+            id: 4,
             icon: cssIcon,
-            text: 'CSS3',
+            text: 'CSS3 & Responsive Web Design (i.e. Flexbox and Grid)',
           },
           {
-            id: 4,
+            id: 5,
             icon: htmlIcon,
             text: 'HTML5',
           },
+          {
+            id: 6,
+            icon: sassIcon,
+            text: 'Preprocessors & methodologies (i.e. Sass and BEM)',
+          },
+
         ]
       },
       { id: 2,
@@ -97,24 +110,7 @@ function Skills() {
             text: 'Client management',
           },
         ]
-      },
-      { id: 4,
-        boxId: 'soft',
-        boxText: 'soft skills',
-        stateId: 'soft-state',
-        skillList: [
-          {
-            id: 1,
-            icon: teamIcon,
-            text: 'Team management',
-          },
-          {
-            id: 2,
-            icon: clientIcon,
-            text: 'Client management',
-          },
-        ]
-      },
+      }
     ];    
 
     return boxList.map(box => (
