@@ -34,7 +34,7 @@
     line-height: 1.8;
 
     &:not(:last-of-type) {
-      margin-bottom: 2rem;
+      margin-bottom: 2.5rem;
     }
   }
 }
@@ -42,7 +42,7 @@
 @media only screen and (max-width: 93.75em) {
   .AboutMe {
     &__text-outer-container {
-      font-size: 1.6rem;
+      font-size: 1.8rem;
     }
 
     &__image {
@@ -69,6 +69,7 @@
       padding: 3rem 5rem;
       margin: 0;
       width: 80rem;
+      max-width: 100%;
 
       & > * {
         transform: skewX(0);
