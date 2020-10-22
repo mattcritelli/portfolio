@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.88ce3ea2.chunk.css",
+    "main.js": "/portfolio/static/js/main.e3139466.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e3139466.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
+    "static/js/2.045f1b57.chunk.js": "/portfolio/static/js/2.045f1b57.chunk.js",
+    "static/js/2.045f1b57.chunk.js.map": "/portfolio/static/js/2.045f1b57.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.3b260505765ecaaeb5023704054a4a56.js": "/portfolio/precache-manifest.3b260505765ecaaeb5023704054a4a56.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/main.88ce3ea2.chunk.css.map": "/portfolio/static/css/main.88ce3ea2.chunk.css.map",
+    "static/js/2.045f1b57.chunk.js.LICENSE.txt": "/portfolio/static/js/2.045f1b57.chunk.js.LICENSE.txt",
+    "static/media/api-icon.svg": "/portfolio/static/media/api-icon.07e0b7a7.svg",
+    "static/media/client-icon.svg": "/portfolio/static/media/client-icon.1c465e8b.svg",
+    "static/media/css-icon.svg": "/portfolio/static/media/css-icon.0fdf5965.svg",
+    "static/media/github-icon.svg": "/portfolio/static/media/github-icon.16467be4.svg",
+    "static/media/html-icon.svg": "/portfolio/static/media/html-icon.89ac23fb.svg",
+    "static/media/javascript-icon2.svg": "/portfolio/static/media/javascript-icon2.61ed8b05.svg",
+    "static/media/matt-photo.jpg": "/portfolio/static/media/matt-photo.56157efe.jpg",
+    "static/media/mongodb-icon.svg": "/portfolio/static/media/mongodb-icon.2f0ac8ae.svg",
+    "static/media/node-icon.svg": "/portfolio/static/media/node-icon.cf677a9c.svg",
+    "static/media/react-icon.svg": "/portfolio/static/media/react-icon.f0793d9f.svg",
+    "static/media/redux-icon.svg": "/portfolio/static/media/redux-icon.85772647.svg",
+    "static/media/ruby-rails-icon.svg": "/portfolio/static/media/ruby-rails-icon.25a6dd09.svg",
+    "static/media/sass-icon.svg": "/portfolio/static/media/sass-icon.470548b4.svg",
+    "static/media/team-icon.svg": "/portfolio/static/media/team-icon.1632320a.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.209c2d7e.js",
+    "static/js/2.045f1b57.chunk.js",
+    "static/css/main.88ce3ea2.chunk.css",
+    "static/js/main.e3139466.chunk.js"
+  ]
+}
