@@ -12,22 +12,21 @@ const Projects = () => (
     <div className="Projects__text-container">
       <p className="Projects__text">
         During my 2+ years at Bimaire I have been involved at all stages
-        of the SDLC for several different applications. Being involved
+        of the SDLC for several different applications. Contributing
         throughout the development process has given me valuable insight
         into how customer requirements impact design and architectural
         decisions.
       </p>
       <p className="Projects__text">
-        Being part of a small and scrappy dev team necessitated that I
-        take control of my learning path and advancement in different
-        languages and development skill sets.
+        As part of a small and scrappy dev team, it was necessary to
+        take control of my learning path, and I have invested in advancing across
+        different languages and development skill sets.
       </p>
       <p className="Projects__text">
-        While I am unable to show screenshots or link directly to these
-        projects due to an employer agreement, below is a brief description of
-        projects I have managed or been heavily involved in. I would love
-        the opportunity to further discuss my contributions to these projects
-        in greater detail.
+        While I am unable to show screenshots or link directly to current
+        projects due to an employer agreement, I have included below a brief description of
+        the projects I have managed or been heavily involved in. I would love
+        the opportunity to discuss these projects in greater detail.
       </p>
     </div>
     <div className="Projects__container">
