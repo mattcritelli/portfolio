@@ -2,6 +2,7 @@ import React from 'react';
 import './AboutMe.scss';
 import SectionHeader from '../SectionHeader/SectionHeader';
 import myPhoto from '../assets/images/matt-photo.jpg'
+import myPhoto2 from '../assets/images/matt-photo-2.jpg'
 
 function AboutMe() {
   return (
@@ -11,7 +12,7 @@ function AboutMe() {
         bottomLine=" Story"
       />
       <div className="AboutMe__container">
-        <img src={myPhoto} alt="" className="AboutMe__image"/>
+        <img src={myPhoto2} alt="" className="AboutMe__image"/>
         <div className="AboutMe__text-outer-container">
           <div className="AboutMe__text-inner-container">
             <p className="AboutMe__text">

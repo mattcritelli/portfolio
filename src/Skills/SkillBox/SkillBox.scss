@@ -1,6 +1,6 @@
 .SkillBox {
   width: 40%;
-  background-color: var(--almond);
+  background-color: var(--almond-light);
   color: var(--dark-grey-1);
   font-weight: 600;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, .3);
@@ -31,13 +31,13 @@
   }
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 75em) {
   .SkillBox {
-    width: 60%;
+    width: 80%;
   }
 }
 
-@media only screen and (max-width: 37.5em) {
+@media only screen and (max-width: 43.75em) {
   .SkillBox {
     width: 95%;
   }
