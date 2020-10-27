@@ -11,7 +11,7 @@ function Contact() {
           Please find my latest contact details in my resume below.
         </p>
         <div className="button-container">
-          <a className="button" href="Matt_Critelli_Resume_10.14.20.pdf" download>Download Resume</a>
+          <a className="button" href="Matt_Critelli_Resume_10.27.20.pdf" download>Download Resume</a>
         </div>
       </div>
     </section>
