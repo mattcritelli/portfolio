@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2441f8c22cc0dd2acb398d617c334703",
+    "revision": "f75fb68e2bcd623ea4c86a1f8fb27623",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "a7fa21ceb8e677f3cfaa",
-    "url": "/portfolio/static/css/main.899daa64.chunk.css"
+    "revision": "01f7b4df36c0d749473a",
+    "url": "/portfolio/static/css/main.8883d62c.chunk.css"
   },
   {
-    "revision": "bdb188af62586b1dc22f",
-    "url": "/portfolio/static/js/2.045f1b57.chunk.js"
+    "revision": "5fb26e548b98d44db365",
+    "url": "/portfolio/static/js/2.8d2ff705.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/portfolio/static/js/2.045f1b57.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.8d2ff705.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "a7fa21ceb8e677f3cfaa",
-    "url": "/portfolio/static/js/main.af5ea0bf.chunk.js"
+    "revision": "01f7b4df36c0d749473a",
+    "url": "/portfolio/static/js/main.4646197e.chunk.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
@@ -26,10 +26,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "07e0b7a728546850797a4309b808bd6f",
     "url": "/portfolio/static/media/api-icon.07e0b7a7.svg"
-  },
-  {
-    "revision": "1c465e8b908f0aecfe822c8a19c7a2ab",
-    "url": "/portfolio/static/media/client-icon.1c465e8b.svg"
   },
   {
     "revision": "0fdf59659d674c6c735287e2834dcc95",
@@ -46,6 +42,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "61ed8b054178d0e8d1285ad8f29f4045",
     "url": "/portfolio/static/media/javascript-icon2.61ed8b05.svg"
+  },
+  {
+    "revision": "d879c5b28936c5042c66eba9ddbc51a8",
+    "url": "/portfolio/static/media/matt-photo-2.d879c5b2.jpg"
   },
   {
     "revision": "56157efeab1583ed8a922abba5a78d20",
@@ -74,9 +74,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "470548b4a95cae966d0750d6720e4082",
     "url": "/portfolio/static/media/sass-icon.470548b4.svg"
-  },
-  {
-    "revision": "1632320ae777f4e1168d2b0bb05a248d",
-    "url": "/portfolio/static/media/team-icon.1632320a.svg"
   }
 ]);
