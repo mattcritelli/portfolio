@@ -11,8 +11,8 @@ import apiIcon from '../assets/svg/api-icon.svg';
 import nodeIcon from '../assets/svg/node-icon.svg';
 import mongoDBIcon from '../assets/svg/mongodb-icon.svg';
 import sassIcon from '../assets/svg/sass-icon.svg';
-// import rubyRailsIcon from '../assets/svg/ruby-rails-icon.svg';
-// import githubIcon from '../assets/svg/github-icon.svg';
+import rubyRailsIcon from '../assets/svg/ruby-rails-icon.svg';
+import githubIcon from '../assets/svg/github-icon.svg';
 // import teamIcon from '../assets/svg/team-icon.svg';
 // import clientIcon from '../assets/svg/client-icon.svg';
 // import rubyIcon from '../assets/svg/ruby-icon.svg';
@@ -63,9 +63,9 @@ function Skills() {
         ]
       },
       { id: 2,
-        boxId: 'full',
-        boxText: 'full stack',
-        stateId: 'full-state',
+        boxId: 'additional',
+        boxText: 'Additional Experience',
+        stateId: 'additional-state',
         skillList: [
           {
             id: 1,
@@ -81,6 +81,16 @@ function Skills() {
             id: 3,
             icon: mongoDBIcon,
             text: 'MongoDB',
+          },
+          {
+            id: 4,
+            icon: rubyRailsIcon,
+            text: 'Ruby & Rails',
+          },
+          {
+            id: 45,
+            icon: githubIcon,
+            text: 'Git / Version Control',
           },
         ]
       }
@@ -103,7 +113,7 @@ function Skills() {
     <section className="Skills" id="skills_section">
       <SectionHeader
         topLine="Skills"
-        bottomLine=" & Experience"
+        bottomLine=""
       />
       <div className="Skills__container">
         { skillBoxes() }

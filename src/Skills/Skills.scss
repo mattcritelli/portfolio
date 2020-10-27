@@ -27,11 +27,7 @@
 @media only screen and (max-width: 75em) {
   .Skills {
     padding: 7.5rem 7.5rem;
-  }
-}
 
-@media only screen and (max-width: 56.25em) {
-  .Skills {
     &__container {
       flex-direction: column;
     }

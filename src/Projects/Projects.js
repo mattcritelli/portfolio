@@ -7,7 +7,7 @@ const Projects = () => (
   <section className="Projects" id="projects_section">
     <SectionHeader
       topLine="Work"
-      bottomLine=" Examples"
+      bottomLine=" Experience"
     />
     <div className="Projects__text-container">
       <p className="Projects__text">
