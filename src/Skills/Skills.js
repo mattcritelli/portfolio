@@ -8,14 +8,14 @@ import reduxIcon from '../assets/svg/redux-icon.svg';
 import cssIcon from '../assets/svg/css-icon.svg';
 import htmlIcon from '../assets/svg/html-icon.svg';
 import apiIcon from '../assets/svg/api-icon.svg';
-// import rubyIcon from '../assets/svg/ruby-icon.svg';
 import nodeIcon from '../assets/svg/node-icon.svg';
 import mongoDBIcon from '../assets/svg/mongodb-icon.svg';
+import sassIcon from '../assets/svg/sass-icon.svg';
 import rubyRailsIcon from '../assets/svg/ruby-rails-icon.svg';
 import githubIcon from '../assets/svg/github-icon.svg';
-import clientIcon from '../assets/svg/client-icon.svg';
-import sassIcon from '../assets/svg/sass-icon.svg';
-import teamIcon from '../assets/svg/team-icon.svg';
+// import teamIcon from '../assets/svg/team-icon.svg';
+// import clientIcon from '../assets/svg/client-icon.svg';
+// import rubyIcon from '../assets/svg/ruby-icon.svg';
 
 function Skills() {
   const [selectedSkillBox, setSkillBox] = useState("front-state");
@@ -63,9 +63,9 @@ function Skills() {
         ]
       },
       { id: 2,
-        boxId: 'full',
-        boxText: 'full stack',
-        stateId: 'full-state',
+        boxId: 'additional',
+        boxText: 'Additional Experience',
+        stateId: 'additional-state',
         skillList: [
           {
             id: 1,
@@ -85,29 +85,12 @@ function Skills() {
           {
             id: 4,
             icon: rubyRailsIcon,
-            text: 'Ruby on Rails',
+            text: 'Ruby & Rails',
           },
           {
-            id: 5,
+            id: 45,
             icon: githubIcon,
-            text: 'Github & Version Control',
-          },
-        ]
-      },
-      { id: 3,
-        boxId: 'soft',
-        boxText: 'soft skills',
-        stateId: 'soft-state',
-        skillList: [
-          {
-            id: 1,
-            icon: teamIcon,
-            text: 'Team management',
-          },
-          {
-            id: 2,
-            icon: clientIcon,
-            text: 'Client management',
+            text: 'Git / Version Control',
           },
         ]
       }
@@ -130,7 +113,7 @@ function Skills() {
     <section className="Skills" id="skills_section">
       <SectionHeader
         topLine="Skills"
-        bottomLine=" & Experience"
+        bottomLine=""
       />
       <div className="Skills__container">
         { skillBoxes() }

@@ -16,17 +16,17 @@ function Navigation() {
     if(mobileNavOpen) toggleMobileMenu();
   }
 
-  const toggleMobileMenu = (e) => {
+  const toggleMobileMenu = () => {
     setMobileNav(!mobileNavOpen);
   }
   
   const navItems = () => {
     const itemList = [
-      {id: 1, delay: 100, text: 'home' },
-      {id: 2, delay: 200, text: 'about' },
-      {id: 3, delay: 300, text: 'skills' },
-      {id: 4, delay: 400, text: 'projects' },
-      {id: 5, delay: 500, text: 'contact' },
+      {id: 1, text: 'home' },
+      {id: 2, text: 'about' },
+      {id: 3, text: 'skills' },
+      {id: 4, text: 'projects' },
+      {id: 5, text: 'contact' },
     ];    
 
     return itemList.map(item => (
@@ -36,7 +36,6 @@ function Navigation() {
         clickHandler={handleNavItemClick}
         isSelected={selectedNavItem === item.text}
         mobileNavOpen={mobileNavOpen}
-        delay={item.delay}
       />
     ))
   }
@@ -52,7 +51,7 @@ function Navigation() {
       <label htmlFor="navi-toggle" className="Navigation__button">
         <span className="Navigation__icon">&nbsp;</span>
       </label>
-      <div className="Navigation__brand">Matt Critelli</div>
+      <div className="Navigation__brand">{"<Matt Critelli />"}</div>
       <ul className="Navigation__list">
         { navItems() }
       </ul>

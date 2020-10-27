@@ -5,9 +5,9 @@
   --outer-space-crayola: hsla(194, 33%, 18%, 1);
   --teal-blue: hsla(195, 37%, 40%, 1);
   --green-sheen: hsla(172, 25%, 55%, 1);
-  --almond: hsla(29, 97%, 86%, 1);
-  --almond: hsla(28, 56%, 87%, 1);
-  --almond: hsla(25, 100%, 94%, 1);
+  /* --almond-dark: hsla(29, 97%, 86%, 1);
+  --almond-medium: hsla(28, 56%, 87%, 1); */
+  --almond-light: hsla(25, 100%, 95%, 1);
   --cambridge-blue: hsla(129, 22%, 69%, 1); /* not-used */
   --tea-green: hsla(95, 32%, 82%, 1);
   --light-grey-1: hsla(0, 9%, 98%, 1);
